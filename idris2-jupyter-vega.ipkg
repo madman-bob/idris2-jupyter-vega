@@ -1,0 +1,9 @@
+package idris2-jupyter-vega
+
+sourcedir = "Idris2JupyterVega"
+
+depends = contrib, python, jupyter
+
+modules =
+    Idris2JupyterVega,
+    Idris2JupyterVega.VegaLite
