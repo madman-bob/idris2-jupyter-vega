@@ -8,16 +8,13 @@ import Python
 
 import Jupyter
 
-%default total
+import public Idris2JupyterVega.VegaLite.V5 as Idris2JupyterVega.VegaLite
 
-public export
-record VegaLite where
-    constructor MkVegaLite
-    json : JSON
+%default total
 
 export
 display : HasIO io => VegaLite -> io ()
-display (MkVegaLite json) = putStrLn $ "DisplayVegaLite " ++ show json
+display vegaLite = putStrLn $ "DisplayVegaLite " ++ show (assert_total $ cast {to = JSON} vegaLite)
 
 export
 data PythonVegaLite : Type where [external]

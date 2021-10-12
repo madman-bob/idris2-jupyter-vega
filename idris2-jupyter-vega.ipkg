@@ -6,4 +6,5 @@ depends = contrib, python, jupyter
 
 modules =
     Idris2JupyterVega,
-    Idris2JupyterVega.VegaLite
+    Idris2JupyterVega.VegaLite,
+    Idris2JupyterVega.VegaLite.V5
