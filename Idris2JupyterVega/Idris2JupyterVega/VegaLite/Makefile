@@ -6,3 +6,6 @@ V5.idr: v5.json Makefile
 
 v5.json:
 	wget https://vega.github.io/schema/vega-lite/v5.json
+
+clean:
+	$(RM) V5.idr

@@ -13,3 +13,7 @@ build/ttc/Idris2JupyterVega: idris2-jupyter-vega.ipkg Idris2JupyterVega/* Idris2
 
 install: idris2-jupyter-vega
 	make -C ../idris2-jupyter add-plugin module="Idris2JupyterVega.VegaLite" plugin="RawVegaLite" packages="idris2-jupyter-vega contrib" install
+
+clean:
+	$(RM) -r build
+	make -C Idris2JupyterVega/Idris2JupyterVega/VegaLite clean
