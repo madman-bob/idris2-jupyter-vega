@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm Idris2JupyterVega/VegaLite/V5.idr
+git restore Idris2JupyterVega/VegaLite/V5.idr
