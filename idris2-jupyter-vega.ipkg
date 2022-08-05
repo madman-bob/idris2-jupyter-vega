@@ -4,6 +4,11 @@ sourcedir = "Idris2JupyterVega"
 
 depends = contrib, python, jupyter
 
+-- script to run before building
+prebuild = "bash v5.sh"
+
+postbuild = "bash restore.sh"
+
 modules =
     Idris2JupyterVega,
     Idris2JupyterVega.VegaLite,
